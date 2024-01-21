@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0088ff;
+}
+
+.hangman-container {
+    margin: auto;
+    background: #0088ff;
+    width: 900px;
+    height: 900px;
+    padding: 30px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hangman-image img {
+    width: 80%;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.hangman-info {
+    text-align: center;
+}
+
+.letter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.letter-buttons button {
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.hangman-guess {
+    text-align: center;
+}
+
+.guessed-letter {
+    font-size: 35px;
+    border-bottom: 3px solid #000;
+    margin-right: 5px;
+}
+
+.unguessed-letter {
+    font-size: 35px;
+    border-bottom: 3px solid #000;
+    margin-right: 5px;
+    color: #fff; /* Change color of unguessed letters if needed */
+}
+
+.game-won {
+    color: darkgreen;
+    font-size: 25px;
+}
+
+.game-lost {
+    color: darkred;
+    font-size: 25px;
+}
