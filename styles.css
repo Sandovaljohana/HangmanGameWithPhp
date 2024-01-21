@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Sofia', cursive;
     background-color: #0088ff;
 }
 
@@ -33,12 +33,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    font-family: 'Sofia', cursive;
 }
 
 .letter-buttons button {
     margin: 5px;
     padding: 5px 10px;
     font-size: 16px;
+    background-color: rgba(189, 251, 230, 0.649);
+    border: none;
+    border-radius: 4px;
 }
 
 .hangman-guess {
@@ -51,19 +55,22 @@ body {
     margin-right: 5px;
 }
 
+
 .unguessed-letter {
     font-size: 35px;
     border-bottom: 3px solid #000;
     margin-right: 5px;
-    color: #fff; /* Change color of unguessed letters if needed */
+    color: #fff;
 }
 
 .game-won {
-    color: darkgreen;
-    font-size: 25px;
+    color: rgb(22, 198, 22);
+    font-size: 45px;
+    padding-bottom: -20px;
 }
 
 .game-lost {
-    color: darkred;
-    font-size: 25px;
+    color: rgb(125, 36, 36);
+    font-size: 45px;
 }
+
