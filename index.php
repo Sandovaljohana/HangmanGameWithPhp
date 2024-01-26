@@ -1,6 +1,6 @@
 <?php session_start(); ?>
-<?php include 'functions.php'; ?>
-<?php include 'config.php'; ?>
+<?php include './php/config.php'; ?>
+<?php include './php/functions.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
     <title>Ahorcado</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./src/styles.css">
 </head>
 
 <body class="background hangman-container">

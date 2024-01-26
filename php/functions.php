@@ -1,7 +1,7 @@
 <?php
 
 function getCurrentPicture($part){
-    return "./images/hangman_" . $part . ".png";
+    return "./src/images/hangman_" . $part . ".png";
 }
 
 function startGame(){
