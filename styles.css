@@ -4,20 +4,21 @@ body {
 }
 
 .hangman-container {
-    margin: auto;
+    margin: 0;
     background: #0088ff;
-    width: 900px;
-    height: 900px;
+    width: auto;
+    height: auto;
     padding: 30px;
     border-radius: 3px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-content: center;
 }
 
 .hangman-image img {
-    width: 80%;
-    margin-bottom: 20px;
+    width: 60%;
+    margin: auto;
+    display: flex;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -29,9 +30,14 @@ body {
     text-align: center;
 }
 
-.letter-buttons {
+.box-letters{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.letter-buttons {
+    display: flex;
     justify-content: center;
     font-family: 'Sofia', cursive;
 }
@@ -43,6 +49,7 @@ body {
     background-color: rgba(189, 251, 230, 0.649);
     border: none;
     border-radius: 4px;
+    transition: transform 0.3s ease;
 }
 
 .hangman-guess {
@@ -55,7 +62,6 @@ body {
     margin-right: 5px;
 }
 
-
 .unguessed-letter {
     font-size: 35px;
     border-bottom: 3px solid #000;
@@ -64,7 +70,7 @@ body {
 }
 
 .game-won {
-    color: rgb(22, 198, 22);
+    color: rgb(0, 20, 101);
     font-size: 45px;
     padding-bottom: -20px;
 }

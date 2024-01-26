@@ -33,8 +33,12 @@ function initializeParts(){
 
 function getRandomWord(){
     global $words;
-    $key = array_rand($words);
-    return $words[$key];
+    if (is_array($words) && !empty($words)) {
+        $key = array_rand($words);
+        return $words[$key];
+    } else {
+        return "PALABRA_POR_DEFECTO";
+    }
 }
 
 function addPart(){
@@ -74,7 +78,7 @@ function isWordCorrect(){
 
 function isBodyComplete(){
     $parts = getParts();
-    return count($parts) <= 1;
+    return is_array($parts) && count($parts) <= 1;
 }
 
 function gameComplete(){

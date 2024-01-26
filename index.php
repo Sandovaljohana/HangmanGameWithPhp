@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="background">
-
+<body class="background hangman-container">
+    <h1 class="hangman-info">Juego del Ahorcado</h1>
     <div class="hangman-container">
         <div class="hangman-image">
             <img src="<?php echo getCurrentPicture(getCurrentPart()); ?>" alt="Hangman Image" />
@@ -31,10 +31,9 @@
             <?php endif; ?>
         </div>
 
-        <div class="hangman-info">
-            <h1>Juego del Ahorcado</h1>
+        <div >
             <div class="letter-buttons">
-                <form method="get">
+                <form class="box-letters" method="get">
                     <?php
                     $max = strlen($letters) - 1;
                     for ($i = 0; $i <= $max; $i++) :
