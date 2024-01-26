@@ -2,7 +2,7 @@
 
 Bienvenido al juego del ahorcado. Este es un proyecto creado en PHP que implementa el clásico juego del ahorcado con una pequeña variación gráfica. Puedes jugar a adivinar la palabra antes de la sirena quede triste al ir perdiendo sus accesorios y paisaje.
 
-<img src="./images/gameImage.png">
+<img src="./src/images/gameImage.png">
 
 ## [Presentación del proyecto](https://n9.cl/hangmangame)
 
